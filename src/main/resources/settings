@@ -1,0 +1,16 @@
+## size of staff generated in absence of a roster file, maximum is 30
+default-staff-size=7
+
+## if left commented out, current next month will be used
+# month=2022-02
+
+## number of employees required for various shifts on each day (<D>ay, <N>ight, <M>orning)
+requirements=D2,N1,M1
+
+## maximum number of shifts an employee can work in a row
+row-limit=3
+
+## shift of the second type cannot be assigned right after the first one for one employee
+illegal-orders=ND,NM
+
+

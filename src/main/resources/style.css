@@ -1,0 +1,53 @@
+
+.root {
+	app-bg: lightgray;
+	cell-bg: lightsteelblue;
+}
+
+.plan-cell {
+	-fx-alignment: center;
+	-fx-border-color: derive(cell-bg, 20%);
+	-fx-border-width: 1.2;
+	-fx-background-color: cell-bg;
+}
+
+.plan-cell:day{
+	cell-bg: lawngreen;
+}
+.plan-cell:night{
+	cell-bg: dodgerblue;
+}
+.plan-cell:morning{
+	cell-bg: orange;
+}
+.plan-cell:day_off{
+	cell-bg: lightsteelblue;
+}
+.plan-cell:vacation{
+	cell-bg: orange;
+}
+
+.panel-label {
+	-fx-alignment: center;
+	-fx-background-color: aliceblue;
+	-fx-border-color: app-bg;
+	-fx-border-width: 1.0;
+	-fx-padding: 3.0;
+}
+
+.central-view{
+	-fx-border-color: app-bg;
+	-fx-border-width: 3.2;
+}
+
+.background{
+	-fx-background-color: app-bg;
+}
+
+.selection-box{
+    -fx-stroke: dodgerblue;
+    -fx-stroke-width: 1.0;
+    -fx-fill: transparent;
+}
+
+

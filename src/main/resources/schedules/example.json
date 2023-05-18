@@ -1,0 +1,798 @@
+{
+    "yearMonthStr": "2023-06",
+    "staffData": [
+        "Alice",
+        "Bob",
+        "Charlie",
+        "Diana",
+        "Eva",
+        "Fred",
+        "Gustavo",
+        "Horst"
+    ],
+    "planData": [
+        {
+            "DAY_OFF": [
+                0,
+                1,
+                2,
+                7
+            ],
+            "DAY": [
+                5,
+                6
+            ],
+            "NIGHT": [
+                4
+            ],
+            "MORNING": [
+                3
+            ]
+        },
+        {
+            "DAY_OFF": [
+                0,
+                3,
+                4,
+                7
+            ],
+            "DAY": [
+                1,
+                6
+            ],
+            "NIGHT": [
+                2
+            ],
+            "MORNING": [
+                5
+            ]
+        },
+        {
+            "DAY_OFF": [
+                2,
+                3,
+                5,
+                6,
+                7
+            ],
+            "DAY": [
+                1
+            ],
+            "NIGHT": [
+                0
+            ],
+            "MORNING": [
+                4
+            ]
+        },
+        {
+            "DAY_OFF": [
+                1,
+                4,
+                5,
+                6,
+                7
+            ],
+            "DAY": [
+                2
+            ],
+            "NIGHT": [
+                0
+            ],
+            "MORNING": [
+                3
+            ]
+        },
+        {
+            "DAY_OFF": [
+                2,
+                3,
+                6,
+                7
+            ],
+            "DAY": [
+                4,
+                5
+            ],
+            "NIGHT": [
+                0
+            ],
+            "MORNING": [
+                1
+            ]
+        },
+        {
+            "DAY_OFF": [
+                0,
+                2,
+                4,
+                7
+            ],
+            "DAY": [
+                3,
+                6
+            ],
+            "NIGHT": [
+                5
+            ],
+            "MORNING": [
+                1
+            ]
+        },
+        {
+            "DAY_OFF": [
+                0,
+                5,
+                7
+            ],
+            "DAY": [
+                3,
+                6
+            ],
+            "NIGHT": [
+                2
+            ],
+            "MORNING": [
+                1,
+                4
+            ]
+        },
+        {
+            "DAY_OFF": [
+                1,
+                2,
+                4,
+                5
+            ],
+            "DAY": [
+                0,
+                7
+            ],
+            "NIGHT": [
+                3
+            ],
+            "MORNING": [
+                6
+            ]
+        },
+        {
+            "DAY_OFF": [
+                1,
+                3,
+                4,
+                6
+            ],
+            "DAY": [
+                2,
+                7
+            ],
+            "NIGHT": [
+                5
+            ],
+            "MORNING": [
+                0
+            ]
+        },
+        {
+            "DAY_OFF": [
+                0,
+                2,
+                3,
+                5,
+                6
+            ],
+            "DAY": [
+                4
+            ],
+            "NIGHT": [
+                7
+            ],
+            "MORNING": [
+                1
+            ]
+        },
+        {
+            "DAY_OFF": [
+                0,
+                1,
+                5,
+                6,
+                7
+            ],
+            "DAY": [
+                2
+            ],
+            "NIGHT": [
+                3
+            ],
+            "MORNING": [
+                4
+            ]
+        },
+        {
+            "DAY_OFF": [
+                4,
+                5,
+                6,
+                7
+            ],
+            "DAY": [
+                1,
+                2
+            ],
+            "NIGHT": [
+                3
+            ],
+            "MORNING": [
+                0
+            ]
+        },
+        {
+            "DAY_OFF": [
+                2,
+                3,
+                4,
+                5
+            ],
+            "DAY": [
+                0,
+                7
+            ],
+            "NIGHT": [
+                1
+            ],
+            "MORNING": [
+                6
+            ]
+        },
+        {
+            "DAY_OFF": [
+                0,
+                1,
+                2
+            ],
+            "DAY": [
+                5,
+                7
+            ],
+            "NIGHT": [
+                6
+            ],
+            "MORNING": [
+                3,
+                4
+            ]
+        },
+        {
+            "DAY_OFF": [
+                0,
+                2,
+                3,
+                6
+            ],
+            "DAY": [
+                1,
+                5
+            ],
+            "NIGHT": [
+                4
+            ],
+            "MORNING": [
+                7
+            ]
+        },
+        {
+            "DAY_OFF": [
+                0,
+                2,
+                5,
+                7
+            ],
+            "DAY": [
+                1,
+                6
+            ],
+            "NIGHT": [
+                4
+            ],
+            "MORNING": [
+                3
+            ]
+        },
+        {
+            "DAY_OFF": [
+                1,
+                2,
+                3,
+                4,
+                6
+            ],
+            "DAY": [
+                0
+            ],
+            "NIGHT": [
+                5
+            ],
+            "MORNING": [
+                7
+            ]
+        },
+        {
+            "DAY_OFF": [
+                0,
+                2,
+                4,
+                6,
+                7
+            ],
+            "DAY": [
+                3
+            ],
+            "NIGHT": [
+                5
+            ],
+            "MORNING": [
+                1
+            ]
+        },
+        {
+            "DAY_OFF": [
+                2,
+                3,
+                4,
+                5
+            ],
+            "DAY": [
+                1,
+                6
+            ],
+            "NIGHT": [
+                7
+            ],
+            "MORNING": [
+                0
+            ]
+        },
+        {
+            "DAY_OFF": [
+                0,
+                1,
+                2,
+                7
+            ],
+            "DAY": [
+                3,
+                5
+            ],
+            "NIGHT": [
+                4
+            ],
+            "MORNING": [
+                6
+            ]
+        },
+        {
+            "DAY_OFF": [
+                2,
+                4,
+                6
+            ],
+            "DAY": [
+                0,
+                3
+            ],
+            "NIGHT": [
+                1
+            ],
+            "MORNING": [
+                5,
+                7
+            ]
+        },
+        {
+            "DAY_OFF": [
+                1,
+                4,
+                5,
+                7
+            ],
+            "DAY": [
+                0,
+                6
+            ],
+            "NIGHT": [
+                3
+            ],
+            "MORNING": [
+                2
+            ]
+        },
+        {
+            "DAY_OFF": [
+                0,
+                3,
+                6,
+                7
+            ],
+            "DAY": [
+                4,
+                5
+            ],
+            "NIGHT": [
+                2
+            ],
+            "MORNING": [
+                1
+            ]
+        },
+        {
+            "DAY_OFF": [
+                0,
+                1,
+                2,
+                3,
+                6
+            ],
+            "DAY": [
+                5
+            ],
+            "NIGHT": [
+                7
+            ],
+            "MORNING": [
+                4
+            ]
+        },
+        {
+            "DAY_OFF": [
+                0,
+                2,
+                3,
+                5,
+                7
+            ],
+            "DAY": [
+                4
+            ],
+            "NIGHT": [
+                1
+            ],
+            "MORNING": [
+                6
+            ]
+        },
+        {
+            "DAY_OFF": [
+                0,
+                1,
+                4,
+                5
+            ],
+            "DAY": [
+                3,
+                7
+            ],
+            "NIGHT": [
+                6
+            ],
+            "MORNING": [
+                2
+            ]
+        },
+        {
+            "DAY_OFF": [
+                0,
+                1,
+                5,
+                6
+            ],
+            "DAY": [
+                4,
+                7
+            ],
+            "NIGHT": [
+                3
+            ],
+            "MORNING": [
+                2
+            ]
+        },
+        {
+            "DAY_OFF": [
+                0,
+                2,
+                3
+            ],
+            "DAY": [
+                1,
+                4
+            ],
+            "NIGHT": [
+                6
+            ],
+            "MORNING": [
+                5,
+                7
+            ]
+        },
+        {
+            "DAY_OFF": [
+                0,
+                2,
+                5,
+                7
+            ],
+            "DAY": [
+                1,
+                4
+            ],
+            "NIGHT": [
+                6
+            ],
+            "MORNING": [
+                3
+            ]
+        },
+        {
+            "DAY_OFF": [
+                0,
+                4,
+                6,
+                7
+            ],
+            "DAY": [
+                2,
+                3
+            ],
+            "NIGHT": [
+                1
+            ],
+            "MORNING": [
+                5
+            ]
+        }
+    ],
+    "requirementsData": [
+        {
+            "DAY": 2,
+            "NIGHT": 1,
+            "MORNING": 1
+        },
+        {
+            "DAY": 2,
+            "NIGHT": 1,
+            "MORNING": 1
+        },
+        {
+            "DAY": 1,
+            "NIGHT": 1,
+            "MORNING": 1
+        },
+        {
+            "DAY": 1,
+            "NIGHT": 1,
+            "MORNING": 1
+        },
+        {
+            "DAY": 2,
+            "NIGHT": 1,
+            "MORNING": 1
+        },
+        {
+            "DAY": 2,
+            "NIGHT": 1,
+            "MORNING": 1
+        },
+        {
+            "DAY": 2,
+            "NIGHT": 1,
+            "MORNING": 2
+        },
+        {
+            "DAY": 2,
+            "NIGHT": 1,
+            "MORNING": 1
+        },
+        {
+            "DAY": 2,
+            "NIGHT": 1,
+            "MORNING": 1
+        },
+        {
+            "DAY": 1,
+            "NIGHT": 1,
+            "MORNING": 1
+        },
+        {
+            "DAY": 1,
+            "NIGHT": 1,
+            "MORNING": 1
+        },
+        {
+            "DAY": 2,
+            "NIGHT": 1,
+            "MORNING": 1
+        },
+        {
+            "DAY": 2,
+            "NIGHT": 1,
+            "MORNING": 1
+        },
+        {
+            "DAY": 2,
+            "NIGHT": 1,
+            "MORNING": 2
+        },
+        {
+            "DAY": 2,
+            "NIGHT": 1,
+            "MORNING": 1
+        },
+        {
+            "DAY": 2,
+            "NIGHT": 1,
+            "MORNING": 1
+        },
+        {
+            "DAY": 1,
+            "NIGHT": 1,
+            "MORNING": 1
+        },
+        {
+            "DAY": 1,
+            "NIGHT": 1,
+            "MORNING": 1
+        },
+        {
+            "DAY": 2,
+            "NIGHT": 1,
+            "MORNING": 1
+        },
+        {
+            "DAY": 2,
+            "NIGHT": 1,
+            "MORNING": 1
+        },
+        {
+            "DAY": 2,
+            "NIGHT": 1,
+            "MORNING": 2
+        },
+        {
+            "DAY": 2,
+            "NIGHT": 1,
+            "MORNING": 1
+        },
+        {
+            "DAY": 2,
+            "NIGHT": 1,
+            "MORNING": 1
+        },
+        {
+            "DAY": 1,
+            "NIGHT": 1,
+            "MORNING": 1
+        },
+        {
+            "DAY": 1,
+            "NIGHT": 1,
+            "MORNING": 1
+        },
+        {
+            "DAY": 2,
+            "NIGHT": 1,
+            "MORNING": 1
+        },
+        {
+            "DAY": 2,
+            "NIGHT": 1,
+            "MORNING": 1
+        },
+        {
+            "DAY": 2,
+            "NIGHT": 1,
+            "MORNING": 2
+        },
+        {
+            "DAY": 2,
+            "NIGHT": 1,
+            "MORNING": 1
+        },
+        {
+            "DAY": 2,
+            "NIGHT": 1,
+            "MORNING": 1
+        }
+    ],
+    "vacationsData": [
+        [
+            0,
+            7
+        ],
+        [
+            0,
+            7
+        ],
+        [
+            7
+        ],
+        [
+            7
+        ],
+        [
+            7
+        ],
+        [
+            7
+        ],
+        [
+            7
+        ],
+        [
+            4
+        ],
+        [
+            4
+        ],
+        [
+        ],
+        [
+        ],
+        [
+        ],
+        [
+            2
+        ],
+        [
+            2
+        ],
+        [
+            2
+        ],
+        [
+            2
+        ],
+        [
+            2
+        ],
+        [
+            2
+        ],
+        [
+            2
+        ],
+        [
+            2
+        ],
+        [
+        ],
+        [
+        ],
+        [
+            0
+        ],
+        [
+            0
+        ],
+        [
+            0,
+            5
+        ],
+        [
+            0,
+            5
+        ],
+        [
+            0
+        ],
+        [
+            0
+        ],
+        [
+            0
+        ],
+        [
+            0
+        ]
+    ]
+}
