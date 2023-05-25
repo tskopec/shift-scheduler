@@ -2,9 +2,10 @@ package cz.tskopec.shiftscheduler.domain.entities
 
 import cz.tskopec.shiftscheduler.domain.Scheduler
 import cz.tskopec.shiftscheduler.domain.entities.Schedule.Companion.MAX_STAFF_SIZE
-
-// Describes set of employees present on a given shift. Integer value works as a bitmap, where all 1-bits signify
-// presence of an employee with the corresponding employee index.
+/*
+Describes set of employees present on a given shift. Integer value works as a bitmap, where all 1-bits signify
+presence of an employee with employee index corresponding to the position of the given bit.
+ */
 @JvmInline
 value class StaffMap(
 	val bits: Int

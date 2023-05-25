@@ -4,7 +4,7 @@ import cz.tskopec.shiftscheduler.domain.Scheduler
 import cz.tskopec.shiftscheduler.domain.entities.ShiftType.*
 import java.util.*
 
-
+// Days which constitute the shift plan of the schedule. Each day contains staff assigned to different shifts on this day
 data class ScheduleDay(
 	val date: Int,
 	val shifts: Map<ShiftType, StaffMap>

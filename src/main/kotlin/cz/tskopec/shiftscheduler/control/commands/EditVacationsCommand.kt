@@ -8,8 +8,8 @@ class EditVacationsCommand(
 	private val model: SchedulerModel,
 	private val value: Boolean
 ): EditScheduleCommand<StaffMap>(
-	Scheduler.vacations,
-	model.vacationsModel.selectedColumnIndices()) {
+	editedList = Scheduler.vacations,
+	selectedIndices = model.vacationsModel.selectedColumnIndices()) {
 
 	override fun execute() {
 

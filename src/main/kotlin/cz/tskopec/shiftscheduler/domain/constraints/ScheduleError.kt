@@ -2,7 +2,7 @@ package cz.tskopec.shiftscheduler.domain.constraints
 
 import java.util.*
 
-
+// Various errors that can arise when the user edits the schedule.
 enum class ScheduleErrorType(val msg: String) {
 
 	ROW_LIMIT("Too many shifts in a row."),

@@ -1,7 +1,6 @@
-package cz.tskopec.scheduler.domain.builder.generator
+package cz.tskopec.shiftscheduler.domain.builder.generator
 
 import cz.tskopec.shiftscheduler.domain.entities.StaffMap
-import cz.tskopec.shiftscheduler.domain.builder.generator.CombinationsRange
 import kotlin.random.Random
 
 // all possible employee combinations of requiredStaffSize, taken from availableStaff.
@@ -9,7 +8,10 @@ class StaffMapIterator (
 	private val availableStaffMap: StaffMap,
 	requiredStaffSize: Int
 ) : Iterator<StaffMap> {
-
+	/*
+	Complete range of possible staff combinations is divided into two at a random point. The subrange starting at this point
+	is iterated first to ensure different results over multiple runs of the generator.
+	 */
 	private val ranges: MutableList<CombinationsRange>
 	private var currentRange: CombinationsRange
 
@@ -22,8 +24,8 @@ class StaffMapIterator (
 			availableStaffMap.employeeCount == requiredStaffSize -> {
 				mutableListOf(CombinationsRange.singleCombination((1 shl requiredStaffSize) - 1))
 			}
-			else -> { // start iteration with a random combination somewhere in the range
-					  // to ensure different results over multiple runs of the generator
+			else -> {
+				// find first and last combination, and a random midpoint between them to create two ranges.
 				val firstComb = (1 shl requiredStaffSize) - 1
 				val midComb = randomCombination(availableStaffMap.employeeCount, requiredStaffSize)
 				val lastComb = (firstComb shl (availableStaffMap.employeeCount - requiredStaffSize))

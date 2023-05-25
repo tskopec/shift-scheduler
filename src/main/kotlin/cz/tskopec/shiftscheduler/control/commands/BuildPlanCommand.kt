@@ -8,13 +8,13 @@ import javafx.concurrent.Task
 import javafx.scene.control.Alert
 import javafx.scene.control.ButtonType
 
+// replaces selected parts of the shifts plan by auto-generated and optimized days
 class BuildPlanCommand(
 	model: DateCellsModel
 ) : EditScheduleCommand<ScheduleDay>(
-	Scheduler.plan,
-	model.selectedColumnIndices().ifEmpty { Scheduler.blankDayIndices }
+	editedList = Scheduler.plan,
+	selectedIndices = model.selectedColumnIndices().ifEmpty { Scheduler.blankDayIndices }
 ) {
-
 
 	override fun execute() {
 

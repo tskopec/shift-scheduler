@@ -12,7 +12,10 @@ import cz.tskopec.shiftscheduler.domain.entities.ScheduleDay
 import kotlinx.coroutines.flow.filter
 import kotlinx.coroutines.flow.fold
 import kotlinx.coroutines.yield
-
+/*
+Uses simple hill-climbing algorithm to optimize given plan. By default, the aim is for the shift distributions of individual
+employees to be as similar as possible to each other by approximating the average distribution.
+*/
 class Optimizer(
 	val plan: List<ScheduleDay>,
 	val constraints: StaffConstraints,
@@ -22,11 +25,10 @@ class Optimizer(
 
 	suspend fun optimizedPlan(): List<ScheduleDay> {
 
-		// aim is for the shift distributions of employees to be as similar as possible by approximating the average distribution
 		var currentSolution = initialSolutionFromPlan(plan, constraints, DistributionTarget::averageDistributions)
 
+		// loop stops when no mutation that can reduce the score exists
 		while(true){
-
 			yield()
 			val mutator = Swapper(currentSolution, constraints)
 			val bestMutation = mutator.mutationsFlow(selectedIndices)

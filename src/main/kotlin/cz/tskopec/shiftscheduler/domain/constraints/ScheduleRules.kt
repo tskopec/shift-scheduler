@@ -6,7 +6,7 @@ import cz.tskopec.shiftscheduler.domain.entities.ScheduleDay
 import cz.tskopec.shiftscheduler.domain.entities.ShiftType
 import cz.tskopec.shiftscheduler.domain.entities.StaffMap
 
-
+// Rules restricting the shift planning process
 enum class ScheduleRules {
 
 	// ensure that no employee can work more than rowLimit shifts in a row

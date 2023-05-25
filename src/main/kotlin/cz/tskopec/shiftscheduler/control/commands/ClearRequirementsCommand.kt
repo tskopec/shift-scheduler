@@ -9,8 +9,8 @@ import cz.tskopec.shiftscheduler.ui.viewmodel.SchedulerModel
 class ClearRequirementsCommand(
 	model: SchedulerModel
 ): EditScheduleCommand<Map<ShiftType, Int>>(
-	Scheduler.sizeRequirements,
-	model.dateCellsModel.selectedColumnIndices().ifEmpty { Scheduler.allPlanIndices }){
+	editedList = Scheduler.sizeRequirements,
+	selectedIndices = model.dateCellsModel.selectedColumnIndices().ifEmpty { Scheduler.allPlanIndices }){
 
 
 	override fun execute() {

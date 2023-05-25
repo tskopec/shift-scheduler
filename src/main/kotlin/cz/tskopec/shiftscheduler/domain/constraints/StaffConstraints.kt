@@ -6,7 +6,7 @@ import cz.tskopec.shiftscheduler.domain.entities.ScheduleDay
 import cz.tskopec.shiftscheduler.domain.entities.ShiftType
 import cz.tskopec.shiftscheduler.domain.entities.StaffMap
 
-
+// Class containing required staff sizes and vacation plans for each day
 class StaffConstraints(
 	private val sizeRequirements: List<Map<ShiftType, Int>>,
 	private val vacations: List<StaffMap>

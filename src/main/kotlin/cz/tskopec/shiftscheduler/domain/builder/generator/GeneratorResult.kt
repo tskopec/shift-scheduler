@@ -15,7 +15,7 @@ sealed class GeneratorResult {
 			reverse()
 		}
 	}
-
+	// returned if PlanGenerator found no way to satisfy current staff constraints and schedule rules.
 	object DeadEnd: GeneratorResult()
 
 }

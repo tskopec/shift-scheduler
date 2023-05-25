@@ -5,16 +5,20 @@ import kotlin.math.abs
 
 object Evaluator {
 
+	// Aspects which are taken into account during evaluating the similarity of a given shift distribution and its target
 	enum class Aspect {
 
+		// total number of assigned shifts
 		SHIFTS_QUANTITY {
 			override fun computeScore(distribution: ShiftDistribution, target: DistributionTarget): Double =
 				abs(distribution.nShifts + distribution.nVacationDays - target.shiftsPerEmployee).toDouble() / Scheduler.scheduleLength
 		},
+		// ratios between different shift types
 		SHIFT_TYPE_RATIOS {
 			override fun computeScore(distribution: ShiftDistribution, target: DistributionTarget): Double =
 				evaluateDistribution(distribution.nShifts, distribution.byType, target.typeRatios)
 		},
+		// ratios between numbers of shifts assigned in different parts of the month
 		PERIOD_RATIOS {
 			override fun computeScore(distribution: ShiftDistribution, target: DistributionTarget): Double =
 				evaluateDistribution(distribution.nShifts, distribution.byPeriod, target.periodRatios)

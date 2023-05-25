@@ -1,9 +1,10 @@
 package cz.tskopec.shiftscheduler.domain.builder.optimizer.solution
 
+import cz.tskopec.shiftscheduler.domain.builder.optimizer.eval.EmployeeStats
 import cz.tskopec.shiftscheduler.domain.entities.Employee
 import cz.tskopec.shiftscheduler.domain.entities.ScheduleDay
-import cz.tskopec.shiftscheduler.domain.builder.optimizer.eval.EmployeeStats
 
+// Solution which is gradually mutated by the Optimizer algorithm
 class Solution(
 	val plan: List<ScheduleDay>,
 	val stats: List<EmployeeStats>

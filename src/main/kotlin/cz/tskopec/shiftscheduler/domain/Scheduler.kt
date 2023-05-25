@@ -12,7 +12,7 @@ import cz.tskopec.shiftscheduler.ui.viewmodel.SchedulerModel
 import javafx.collections.ObservableList
 import java.time.DayOfWeek
 import java.time.LocalDate
-
+// Main domain object which provides different parts of the schedule as observable lists
 object Scheduler {
 
 	val schedule = ScheduleInitializer.getSchedule()

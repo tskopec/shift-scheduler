@@ -7,8 +7,8 @@ import cz.tskopec.shiftscheduler.ui.viewmodel.SchedulerModel
 class ClearShiftsCommand(
 	model: SchedulerModel
 ): EditScheduleCommand<ScheduleDay>(
-	Scheduler.plan,
-	model.dateCellsModel.selectedColumnIndices().ifEmpty { Scheduler.allPlanIndices }){
+	editedList = Scheduler.plan,
+	selectedIndices = model.dateCellsModel.selectedColumnIndices().ifEmpty { Scheduler.allPlanIndices }){
 
 
 	override fun execute() {

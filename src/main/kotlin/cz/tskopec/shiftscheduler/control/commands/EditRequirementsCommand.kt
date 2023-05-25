@@ -9,8 +9,8 @@ class EditRequirementsCommand(
 	private val editedType: ShiftType,
 	private val delta: Int
 ): EditScheduleCommand<Map<ShiftType, Int>>(
-	Scheduler.sizeRequirements,
-	model.requirementsModel.selectedColumnIndices()) {
+	editedList = Scheduler.sizeRequirements,
+	selectedIndices = model.requirementsModel.selectedColumnIndices()) {
 
 	override fun execute() {
 

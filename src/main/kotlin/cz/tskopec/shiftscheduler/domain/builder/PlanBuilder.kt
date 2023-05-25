@@ -13,7 +13,9 @@ import kotlinx.coroutines.Job
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.runBlocking
 
-
+// Runs a coroutine that auto-generates a shifts plan. At first a random plan conforming to the rules
+// and constraints is generated, this plan is then optimized to approach the ideal shift distribution.
+// Only days at selectedIndices are modified, the rest retains their state from originalPlan
 object PlanBuilder {
 
 	sealed class Result
@@ -23,8 +25,6 @@ object PlanBuilder {
 	val planBuildInProgress = SimpleBooleanProperty(false)
 	private var buildJob: Job? = null
 
-	// Build random plan that conforms to schedule rules and staff constraints.
-	// Only days at selectedIndices are modified, the rest retains their state from originalPlan
 	fun build(
 		originalPlan: List<ScheduleDay>,
 		constraints: StaffConstraints,

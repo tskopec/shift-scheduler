@@ -8,8 +8,8 @@ import cz.tskopec.shiftscheduler.ui.viewmodel.SchedulerModel
 class ClearVacationsCommand(
 	model: SchedulerModel
 ): EditScheduleCommand<StaffMap>(
-	Scheduler.vacations,
-	model.dateCellsModel.selectedColumnIndices().ifEmpty { Scheduler.allPlanIndices }){
+	editedList = Scheduler.vacations,
+	selectedIndices = model.dateCellsModel.selectedColumnIndices().ifEmpty { Scheduler.allPlanIndices }){
 
 
 	override fun execute() {

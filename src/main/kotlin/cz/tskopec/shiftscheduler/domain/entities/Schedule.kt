@@ -3,6 +3,7 @@ package cz.tskopec.shiftscheduler.domain.entities
 import javafx.collections.ObservableList
 import java.time.YearMonth
 
+// Complete schedule containing concerned month, staff, shifts plan, vacations plan and staff size requirements
 class Schedule(
 	val month: YearMonth,
 	val staff: List<Employee>,

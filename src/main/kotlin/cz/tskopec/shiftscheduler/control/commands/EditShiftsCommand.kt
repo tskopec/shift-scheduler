@@ -11,14 +11,14 @@ class EditShiftsCommand(
 	private val model: SchedulerModel,
 	private val type: ShiftType
 ): EditScheduleCommand<ScheduleDay>(
-	Scheduler.plan,
-	model.shiftsModel.selectedColumnIndices()) {
+	editedList = Scheduler.plan,
+	selectedIndices = model.shiftsModel.selectedColumnIndices()) {
 
 	override fun execute() {
 
-		val newDays = model.shiftsModel.selectedColumns().map { col ->
-			val selectedStaff = StaffMap(col.selectedRows())
-			val updatedDay =  Scheduler.plan[col.index].assignShift(type, selectedStaff)
+		val newDays = model.shiftsModel.selectedColumns().map { column ->
+			val selectedStaff = StaffMap(column.selectedRows())
+			val updatedDay =  Scheduler.plan[column.index].assignShift(type, selectedStaff)
 			updatedDay
 		}
 		Scheduler.updatePlan(newDays)

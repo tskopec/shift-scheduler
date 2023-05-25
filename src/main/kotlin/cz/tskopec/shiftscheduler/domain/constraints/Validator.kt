@@ -3,7 +3,7 @@ package cz.tskopec.shiftscheduler.domain.constraints
 import cz.tskopec.shiftscheduler.control.Controller
 import cz.tskopec.shiftscheduler.domain.Scheduler
 
-// validates user schedule modifications and supplies the Controller with errors to display
+// Validates user schedule modifications and supplies the Controller with errors to display
 object Validator {
 
 	class Result(
